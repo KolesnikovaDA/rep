@@ -1,0 +1,186 @@
+/* Указываем box sizing */
+.boxsize {
+    position: absolute;
+    background-color: rgb(197, 160, 113);
+    width: 992px;
+    height: 518px;
+    left: 16px;
+    top: 1398px;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+  ul[class],
+  ol[class] {
+    list-style: none;
+  }
+  
+  /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Упрощаем работу с изображениями */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  /* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+  }
+  
+  /* Наследуем шрифты для инпутов и кнопок */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  /* body{
+    width: 1510px;
+} */
+
+.heading{
+    width: 1170px;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+/* separator */
+.separator{
+    width: 170px;
+    height: 0px;
+    left: 671px;
+    margin: auto;
+    top: 2003px;
+    border: 1PX solid rgb(232, 85, 85);
+}
+
+/* part2 */
+.part2{
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+    height: 21px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    background-color: white;
+}
+.part2_text{
+  font-family: 'Open Sans';
+  background-color: #F5F5F5;
+}
+.verstawe {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+
+
+
+
+
+.blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    
+    width: 1170px;
+    margin: 0px 0px 0px 130px;
+
+  }
+
+
+.blocks__content{
+    width: 370px;
+    height: 510px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+  }
+
+  .blocks__content .item {
+    
+    font-size: 17px;
+    text-align: center;
+    color: #86878B;
+    border: 1px solid #b4b1b1;
+    margin-left: 70px;
+    border: 1px solid rgb(218, 214, 214);
+    font-family: 'Raleway';
+}   
+.item{
+  width: 250px;
+}
+
+#item1 {
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    width: 250x;
+    height: 30px;
+    padding: 0px 0px 5px 0px;
+    color: #F5F5F5;
+}
+
+#item2 {
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    width: 250px;
+    height: 60px;
+    padding: 5px 0px 5px 0px;
+    color: #F5F5F5;
+}
+
+#item3 {
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    width: 250px;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+    color: #FFFFFF;
+}
+
+#block2 {
+    
+    margin-top: -20px;
+    
+}
